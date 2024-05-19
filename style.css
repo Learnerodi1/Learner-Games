@@ -1339,6 +1339,12 @@ footer section  .social code, footer article code{
         flex-direction: column;
         row-gap: 20px;
     }
+        footer section{
+        flex-wrap: wrap;
+    }
+    footer section div{
+        flex-basis: 45%;
+    }
 }
 @media screen and (max-width:990px) {
     .individual img{
@@ -1545,12 +1551,6 @@ footer section  .social code, footer article code{
         width: 100%;
         background-position: center;
         background-size: cover;
-    }
-    footer section{
-        flex-wrap: wrap;
-    }
-    footer section div{
-        flex-basis: 45%;
     }
     footer>form>#newsletter{
         width: 100%;
