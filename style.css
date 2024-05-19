@@ -543,7 +543,7 @@ section #logo i{
     padding-inline:50px ;
     border: 2px solid var(--first-color);
     box-shadow: 0 0 10px var(--first-color);
-    height: 40vh;
+    height: 70vh;
 }
 #account .signup>section>div{
     height: 60vh;
