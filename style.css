@@ -259,9 +259,12 @@ header ul li {
     opacity: 1;
 }
 #offandon:checked + label ~ #hero .socials a{
-    /* background-color: var(--second-color); */
     color: var(--first-color);
     box-shadow: 0 0 10px var(--background-color2);
+}
+#offandon:checked + label ~ #hero .socials a:hover{
+    color: var(--sixth-color);
+    box-shadow: 0 0 10px var(--first-color);
 }
 #offandon:checked + label ~ #hero{
     background:linear-gradient(to top ,rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(white\ bg.jpeg) ;
@@ -1031,7 +1034,6 @@ video{
     width: 100%;
     height: 300px;
     padding: 20px;
-    /* padding-block: 0px; */
     background-color: rgba(0,0,0,0.4);
     backdrop-filter: blur(20px);
     display: flex;
@@ -1339,7 +1341,7 @@ footer section  .social code, footer article code{
         flex-direction: column;
         row-gap: 20px;
     }
-        footer section{
+    footer section{
         flex-wrap: wrap;
     }
     footer section div{
@@ -1499,12 +1501,15 @@ footer section  .social code, footer article code{
         opacity: 1;
     }
     #nav:checked+label .fa-chevron-left{
-        display: none;
+        display: inline;
     }
     #nav:checked+label .fa-chevron-right{
-        display:inline;
+        display:none;
     }
     #nav+label .fa-chevron-right{
+        display: inline;
+    }
+    #nav+label .fa-chevron-left{
         display: none;
     }
     #nav:checked+label{
@@ -1816,17 +1821,17 @@ footer section  .social code, footer article code{
         font-size:1rem ;
     }
     header{
-        width: 50px;
+        width: 60px;
     }
     header h2{
         font-size: .8rem;
         padding: 5px;
     }
     #nav+label{
-        left: 30px;
+        left: 40px;
     }
     main{
-        padding-left: 50px;
+        padding-left: 60px;
     }
     .search{
         display: none;
@@ -1876,7 +1881,9 @@ footer section  .social code, footer article code{
         height: 200px;
     }
         section#secondarynav{
-        width: 80%;
+        width: 70%;
+        justify-content: space-between;
+        left: 76px;
     }
 }
 @media screen and (max-height:640px) {
